@@ -88,16 +88,7 @@ docker rm fastapi-container
 ├── main.py               # FastAPI app
 ├── Dockerfile            # Dockerfile to containerize the app
 ├── requirements.txt      # Python dependencies
-├── model.pkl             # Trained machine learning model (add this file)
-├── preprocessor.pkl      # Preprocessing pipeline (if applicable)
+├── models/.pkl             # Trained machine learning model (add this file)
 └── README.md             # Project documentation
 ```
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Credits
-
-- FastAPI: [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
-- Docker: [https://www.docker.com/](https://www.docker.com/)
