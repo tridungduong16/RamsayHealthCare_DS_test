@@ -43,10 +43,9 @@ docker run -d --name fastapi-container -p 8000:8000 my-fastapi-app
 
 ### 5. Test the API
 
-Once the container is running, the FastAPI app will be accessible at `http://127.0.0.1:8000`.
+Once the container is running, the FastAPI app will be accessible at `http://localhost:8000/docs#/default/predict_predict_post`.
 
-- Visit `http://127.0.0.1:8000/` to see the root endpoint.
-- Visit `http://127.0.0.1:8000/docs` to access the automatically generated Swagger UI where you can test the `/predict` endpoint.
+- Visit `http://localhost:8000/docs#/default/predict_predict_post/` to see the root endpoint.
 
 ### 6. Making Predictions
 
@@ -70,7 +69,7 @@ You can use the `/predict` endpoint to get predictions from the deployed machine
 Send a POST request to:
 
 ```
-POST http://127.0.0.1:8000/predict
+POST http://localhost:8000/docs#/default/predict_predict_post
 ```
 
 ### 7. Stopping the Docker Container
